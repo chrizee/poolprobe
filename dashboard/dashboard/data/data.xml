@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<chartdata>
+<col>
+<source>ADatabase</source>
+<ssl/>
+<servername>localhost</servername>
+<username>root</username>
+<password>christo16</password>
+<dbname>poolprobe</dbname>
+<dbconnected>1</dbconnected>
+<type>line</type>
+
+
+
+<title>Line Chart</title><orientation/><name>0</name><xaxistitle/><yaxistitle/><height/><width/><showgrid/><showline/>
+<rdbms>mysql</rdbms>
+<file/>
+<xaxis/><yaxis/><sql/><size/><maptype/><text/><tracename/></col>
+</chartdata>

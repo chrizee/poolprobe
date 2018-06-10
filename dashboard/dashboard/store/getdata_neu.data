@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<chartdata>
+<col>
+<source>ADatabase</source>
+<ssl/>
+<servername>localhost</servername>
+<username>root</username>
+<password>raspberry</password>
+<dbname>poolprobe</dbname>
+<dbconnected>1</dbconnected>
+<type>kpi</type>
+
+
+
+<title>Wassertemperatur</title><orientation/><name>0</name><xaxistitle/><yaxistitle/><height/><width/><showgrid/><showline/>
+<rdbms>mysql</rdbms>
+<file/>
+<xaxis>SQL1:{col}atlas_temp{/col}{data}SELECT * FROM sensors LIMIT 10;{/data}</xaxis><yaxis>SQL1:{col}id{/col}{data}SELECT * FROM temp_tb LIMIT 10;{/data}</yaxis><sql>SELECT * FROM sensors order by timestamp desc limit 10; </sql><size/><maptype/><text/><tracename>Temperatur</tracename></col>
+<col><source>ADatabase</source><rdbms>mysql</rdbms><servername>localhost</servername><ssl/><username>root</username><password>raspberry</password><dbname>poolprobe</dbname><dbconnected>1</dbconnected><file/><type>line</type><title>Temperaturverlauf</title><name>4</name><xaxistitle>Zeit</xaxistitle><yaxistitle>Temp</yaxistitle><height/><width/><showgrid/><showline/><orientation/><xaxis>SQL1:{col}timestamp{/col}{data}SELECT * FROM sensors order by timestamp desc limit 10;{/data}</xaxis><yaxis>SQL1:{col}atlas_temp{/col}{data}SELECT * FROM sensors order by timestamp desc limit 10;{/data}</yaxis><sql>SELECT * FROM sensors order by timestamp desc limit 10; </sql><size/><maptype/><text/><tracename/></col><col><source>ADatabase</source><rdbms>mysql</rdbms><servername>localhost</servername><ssl/><username>root</username><password>raspberry</password><dbname>poolprobe</dbname><dbconnected>1</dbconnected><file/><type>kpi</type><xaxis>SQL1:{col}ph{/col}{data}SELECT * FROM sensors order by timestamp desc limit 10;{/data}</xaxis><yaxis>SQL1:{col}timestamp{/col}{data}SELECT * FROM sensors order by timestamp desc limit 10;{/data}</yaxis><sql>SELECT * FROM sensors order by timestamp desc limit 10; </sql><size/><maptype/><text/><tracename>PH Wert</tracename><title>PH Wert Wasser</title><name>2</name><xaxistitle/><yaxistitle/><height/><width/><showgrid/><showline/><orientation/></col><col><source>ADatabase</source><rdbms>mysql</rdbms><servername>localhost</servername><ssl/><username>root</username><password>raspberry</password><dbname>poolprobe</dbname><dbconnected>1</dbconnected><file/><type>kpi</type><xaxis>SQL1:{col}orp{/col}{data}SELECT * FROM sensors LIMIT 10;{/data}</xaxis><yaxis>SQL1:{col}timestamp{/col}{data}SELECT * FROM sensors LIMIT 10;{/data}</yaxis><sql>SELECT * FROM sensors order by timestamp desc limit 10;</sql><size/><maptype/><text/><tracename>ORP Wert</tracename><title>ORP Wert Wasser</title><name>3</name><xaxistitle/><yaxistitle/><height/><width/><showgrid/><showline/><orientation/></col></chartdata>

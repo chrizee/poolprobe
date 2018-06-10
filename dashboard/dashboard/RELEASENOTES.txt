@@ -1,0 +1,5 @@
+Dated:2018-05-26#Version 2.1.16/Fixed cross OS file handling issue
+Dated:2018-04-14#Version 2.1.15//Released with new functionalities. ability to add multiple panels and drag/drop/resize panel
+Dated:2018-02-14#Version 2.1.13//Fixed data clear function
+Dated:2018-01-30#Version 2.1.12//Load Sample data function added. handled special character from SQL query submission. 
+Dated:2017-11-30#Version 2.1.10 // User Friendly Error message when invalid Query supplied

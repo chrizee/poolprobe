@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<chartdata>
+<col>
+<source>ADatabase</source>
+<ssl/>
+<servername>localhost</servername>
+<username>root</username>
+<password>raspberry</password>
+<dbname>demo</dbname>
+<dbconnected>1</dbconnected>
+<type>kpi</type>
+
+
+
+<title>Wassertemperatur</title><orientation/><name>0</name><xaxistitle/><yaxistitle/><height/><width/><showgrid/><showline/>
+<rdbms>mysql</rdbms>
+<file/>
+<xaxis>SQL1:{col}wert{/col}{data}SELECT * FROM temp_tb LIMIT 10;{/data}</xaxis><yaxis>SQL1:{col}id{/col}{data}SELECT * FROM temp_tb LIMIT 10;{/data}</yaxis><sql>SELECT * FROM temp_tb order by id desc limit 1; </sql><size/><maptype/><text/><tracename>Temperatur</tracename></col>
+<col><source>ADatabase</source><rdbms>mysql</rdbms><servername>localhost</servername><ssl/><username>root</username><password>raspberry</password><dbname>demo</dbname><dbconnected>1</dbconnected><file/><type>kpi</type><title>Altitude</title><name>1</name><xaxistitle/><yaxistitle/><height/><width/><showgrid/><showline/><orientation/><xaxis>SQL1:{col}wert{/col}{data}SELECT * FROM altitude_tb order by id desc limit 1;{/data}</xaxis><yaxis>SQL1:{col}wert{/col}{data}SELECT * FROM altitude_tb order by id desc limit 1;{/data}</yaxis><sql>SELECT * FROM altitude_tb order by id desc limit 1; </sql><size/><maptype/><text/><tracename>Altitude</tracename></col><col><source>ADatabase</source><rdbms>mysql</rdbms><servername>localhost</servername><ssl/><username>root</username><password>raspberry</password><dbname>demo</dbname><dbconnected>1</dbconnected><file/><type>kpi</type><title>Barometer</title><name>2</name><xaxistitle/><yaxistitle/><height/><width/><showgrid/><showline/><orientation/><xaxis>SQL1:{col}wert{/col}{data}SELECT * FROM pressure_tb order by id desc limit 1;{/data}</xaxis><yaxis>SQL1:{col}id{/col}{data}SELECT * FROM pressure_tb order by id desc limit 1;{/data}</yaxis><sql>SELECT * FROM pressure_tb order by id desc limit 1; </sql><size/><maptype/><text/><tracename>Barometer</tracename></col><col><source>ADatabase</source><rdbms>mysql</rdbms><servername>localhost</servername><ssl/><username>root</username><password>raspberry</password><dbname>demo</dbname><dbconnected>1</dbconnected><file/><type>kpi</type><title>Update</title><name>3</name><xaxistitle/><yaxistitle/><height/><width/><showgrid/><showline/><orientation/><xaxis>SQL1:{col}uhrzeit{/col}{data}SELECT * FROM temp_tb order by id desc limit 1;{/data}</xaxis><yaxis>SQL1:{col}id{/col}{data}SELECT * FROM temp_tb order by id desc limit 1;{/data}</yaxis><sql>SELECT * FROM temp_tb order by id desc limit 1; </sql><size/><maptype/><text/><tracename>letzte Aktualisierung</tracename></col><col><source>ADatabase</source><rdbms>mysql</rdbms><servername>localhost</servername><ssl/><username>root</username><password>raspberry</password><dbname>demo</dbname><dbconnected>1</dbconnected><file/><type>line</type><title>Temperaturverlauf </title><name>4</name><xaxistitle>Zeit</xaxistitle><yaxistitle>Temp</yaxistitle><height/><width/><showgrid/><showline/><orientation/><xaxis>SQL1:{col}uhrzeit{/col}{data}SELECT * FROM temp_tb LIMIT 10;{/data}</xaxis><yaxis>SQL1:{col}wert{/col}{data}SELECT * FROM temp_tb;{/data}</yaxis><sql>SELECT * FROM temp_tb LIMIT 20; </sql><size/><maptype/><text/><tracename>Temperaturverlauf</tracename></col></chartdata>
