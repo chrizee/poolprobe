@@ -1,7 +1,8 @@
 <?php
 namespace setup;
-use PDO;
 use DateTime;
+use PDO;
+use PDOException;
 
 $GLOBALS['config'] = array(
     'app' => array(
